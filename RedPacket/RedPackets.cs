@@ -35,7 +35,7 @@ namespace RedPacket
             var packets = new List<decimal>();
             for (var i = 0; i < _numOfPackets; i++)
             {
-                var randomNumber = _rand.Next(0, (int)_totalMoney / _numOfPackets * 100);
+                var randomNumber = _rand.Next(0, (int)_totalMoney * 100 / _numOfPackets);
                 packets.Add(randomNumber);
             }
             return packets;
