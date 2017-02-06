@@ -13,7 +13,7 @@ namespace RedPacket.Tests
         [Test]
         public void ShouldSumUpToTotalAfterRandomization()
         {
-            for (var i = 0; i < 10000000; i++)
+            for (var i = 0; i < 10000; i++)
             {
                 decimal total = _rand.Next(1, 1001);
                 var numberOfPackets = _rand.Next(1, 50);

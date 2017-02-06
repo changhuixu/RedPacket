@@ -12,6 +12,18 @@ namespace RedPacket
                 Console.WriteLine(packet);
             }
             Console.ReadKey();
+
+            Console.WriteLine("Dynamic Red Packets");
+            const double total = 50.0;
+            const int num = 8;
+            var test2 = new DynamicRedPacket(total, num);
+            for (var i = 0; i < num; i++)
+            {
+                Console.ReadKey();
+                Console.WriteLine(i + "\t" + test2.GetRedPacket());
+            }
+            Console.WriteLine("Dynamic Red Packets Out");
+            Console.ReadKey();
         }
     }
 }
